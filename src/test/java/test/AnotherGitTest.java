@@ -7,11 +7,10 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class AnotherGitTest {
+public class AnotherGitTest extends TestBase{
 
     @Test
     void anotherGitTest() {
-        Configuration.holdBrowserOpen=true;
 
         open("https://github.com");
         $(".header-menu-wrapper").find(byText("Solutions")).hover();

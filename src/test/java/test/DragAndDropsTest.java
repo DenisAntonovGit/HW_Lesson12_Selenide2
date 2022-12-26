@@ -7,12 +7,10 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class DrugAndDropsTest {
+public class DragAndDropsTest extends TestBase{
 
     @Test
-    void drugAndDropsTest() {
-
-        Configuration.holdBrowserOpen=true;
+    void dragAndDropsTest() {
 
         open("https://the-internet.herokuapp.com/drag_and_drop");
         $("#column-a").dragAndDropTo($("#column-b"));
